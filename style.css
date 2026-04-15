@@ -1,0 +1,49 @@
+
+/* SFONDO DEL BODY DI PAGINA */
+
+
+#sfondo {
+background-color: rgba(173, 219, 222, 0.20);
+/* Aggiungo per un colore di sfondo 
+rgba:red ,green, blue, (alpha=trasparenza)
+AA; 
+/* SINTASSI #RRGGBBAA */
+/* ...+ Valori;---rgba=RGB:COLORE; A:Trasparenza!!!((da 0 a 1, = 10%); 
+(aa se trasparente,(del tutto, 0%) IL 4 VALORE AGGIUNTO EQUIVALE AD ALPHA! 
+ o ff se opaco)- (100%, pieno- opaco;) ; una trasparenza al mio colore scelto  */ */
+
+}
+
+/* TITOLI */
+
+.h1 {
+    text-align: center;
+    text-decoration: line-through brown;
+    color:rebeccapurple;
+}
+.h2{}
+
+.Lavora-conNoi{}
+
+:hover .Lavora-conNoi{}
+
+
+.navbar{
+
+
+}
+ ul nav {
+
+
+ }
+
+ nav a {
+
+
+ }
+
+ :hover a{
+
+
+    
+ }
