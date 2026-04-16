@@ -1,0 +1,89 @@
+Sintassi : 
+Gryd System:
+GRID SYESTEM -BOOTSTRAP E RESPONSIVE
+ COLONNE 
+<div class="col-12>
+
+per gli elementi 
+Paginazione :
+
+Han un massimo di valore numerico a rif. : 12; 
+-Struttura:
+-container;
+
+
+
+row:Crea riga orizzontale(contenitore di colonne-divide spazio in 12 parti)
+
+col: un contenitore che divide lo spazio a 12 colonne 
+
+
+ogni riga ha 12 colonne
+le colonne devono SEMPRE sommare 12
+regola dei livelli per decidere come si comporta su ogni schermo
+regola container → row → col è la struttura base
+
+
+
+
+
+Puo' aver dimensioni varie: le regoli con valori numerici che si regolan a seconda di Media Query ovvero del valore a riferimento del Desktop; 
+-	su mobile → 12 colonne (tutta la larghezza)
+- 	su tablet → 6 colonne (metà)
+-	su desktop → 4 colonne (un terzo)
+
+
+
+Questi sono i “livelli”
+Per le Query di schermo (chiamati breackpoints)
+- col- 
+- col-sm- SMALL
+- col-md- MEDIUM
+
+- col-lg- LARGE
+- col-xl- EXTRA-LARGE
+- col-xxl- EXTRA-SUPER-LARGE
+
+
+
+
+
+CSS:
+
+display: flex
+Trasforma il contenitore in un box flessibile.
+justify-content: center
+Centra gli elementi in orizzontale.
+align-items: center
+Centra gli elementi in verticale.
+flex-direction: column
+Mette gli elementi uno sotto l’altro.
+padding
+Spazio interno.
+border-radius
+Arrotonda gli angoli.
+
+
+
+MODALE;
+
+- modal-dialog
+È il contenitore della finestra.
+-modal-content
+È il riquadro vero e proprio.
+- modal-header
+Contiene titolo + pulsante chiudi.
+- modal-body
+Contiene il messaggio.
+- data-bs-toggle="modal"
+Dice al bottone: “Apri la modale”.
+- data-bs-target="#modalLavora"
+Dice quale modale aprire.
+
+
+justify content ed align items funzionano Ma non tanto su di 
+un testo;  su E SOLO  ,
+ su contenitore display:flex
+
+anitt@yahoo.it
+Anita1234.
