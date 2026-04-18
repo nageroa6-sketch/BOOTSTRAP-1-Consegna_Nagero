@@ -87,3 +87,30 @@ un testo;  su E SOLO  ,
 
 anitt@yahoo.it
 Anita1234.
+
+TRACCIA :
+Realizza un blog su cinema sfruttando il Bootstrap (grid system) e CSS.
+In questa esercitazione non usare i componenti di Bootstrap.
+
+Il blog deve contenere i seguenti elementi:
+
+Navbar fissata in alto.
+Un header grande quanto tutta la pagina con il titolo al centro (cosiddetta Hero section).
+Sotto l’header, una sezione dedicata ai film sul sito
+3 film di genere diverso
+Immagine, titolo, piccola descrizione
+un form per lavorare con noi, costituito con i seguenti elementi:
+campo email
+campo password
+
+Prova a farlo:
+pulsante invia, che al click fara' aprire il componente Modal di Bootstrap con un messaggio "Grazie per averci contattato"
+(la modal viene spiegata nella lezione successiva)
+
+un footer, contenente:
+P.IVA
+informazioni proprietario del blog
+link social del blog
+L’immagine del film deve portare sul sito https://www.rottentomatoes.com
+Per quanto possibile, il sito dev’essere responsive, sfruttando i breakpoints di Bootstrap, e se necessario, anche le media queries.
+OPZIONALE: inserire le icone di Bootstrap all'interno del footer che faranno riferimento ai social del blog cinema.

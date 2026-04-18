@@ -1,18 +1,14 @@
+
+font-family: "Roboto Serif", serif;
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "Roboto Serif", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+ 
   
 }
 /* SFONDO DEL BODY DI PAGINA */
 
 /* DIMENSIONE TESTO: px,em,...  CON LA PROPIETA' FONT-SIZE
 MENTRE FONT-WEIGHT FA LO SPESSORE ED HA DEI VALORI DA 100-A-900 */
-
+/* COLORE DI SFONDO PAGINA CON IMPORTANT TANTO PER RICORDARE QUESTA PROPIETA'  */
 
 
 body {
@@ -33,29 +29,28 @@ o ff se opaco)- (100%, pieno- opaco;) ; una trasparenza al mio colore scelto  */
 
 
 /* HERO */
-
+/* CENTRATURA DI PAGINAZIONE DEGLI ELEMENTI */
 .hero-section{
    height: 100vh;
-margin-top: 5px;
-    margin-bottom: 50%;
+   margin-top: 5px;
+  
     background-color: cyan;
-   /* creo lo spazio per la navbar ed altro  */
     /*ATTIVA FLEXBOX  */
    display: flex;
     /* Ho trasformato elemento ad un contenitore flessibile, permettendomi a controllare allineamento al suo interno. */
-    /* Allineo ORIZZONTALE CON JUSTIFY-CONTENT CENTER. e do una propietà per stare al centro  */
+    /* Allineo ORIZZONTALE CON JUSTIFY-CONTENT CENTER.   */
    /* X */
     justify-content: center;
     /* Y */
     align-items: center;
-    /* ALIGN-ITEMS : ALLINEA IN ASSE VERTICALE (Y) Elementi che poi io con la propietà li dispongo al centro; ) POSSONO CENTRARSI ELEMENTI DENTRO A DIV, BOX, UN HEADER E QUALSIASI ALTRO ELEMENTO TAG.-Contenitore*/
+    /* ALIGN-ITEMS : ALLINEA IN ASSE VERTICALE (Y) Elementi */
 /* 3 regole che assieme danno propietà ad un corretto allineamento centrato (X E Y REGOLATE, IN MODO + VELOCE; */
+}
 
 
 /* I SELETTORI CSS: Selettori : Universale è con asterisco * , per ID :# , per Classi: .class (puoi aggiungere prop. es. ; :hover ; e in linea di massima aggiungi 
 !important che serve per prestabilire in maniera forte la tua regola.*/
 
-}
 
 
 /* TITOLO */
@@ -65,12 +60,13 @@ h1 {
     font-size: 3 rem;
     display: block;
     text-align: center;
-    text-shadow: rgba(182, 209, 135, 0.7), wheat;
-    color:rgb(117, 31, 203);
+    color:darkcyan;
     font-family: "Electrolize", sans-serif;
     font-weight: 700;
     font-style: normal;
 }
+
+
 /* SOTTOTITOLO */
 h2{
     font-weight: bold;
@@ -87,31 +83,41 @@ h2{
     justify-content: space-between;
     text-align: center;
     text-transform: uppercase;
-    background-color: gray;
+    background-color:rgba(182, 209, 135, 0.7);
     
 }
 
-/* LINK NAVBAR */
+.logo {
+color:cyan;
+ font-weight: bolder;
+    padding: 12px;
+    font-style: oblique;
+    
+    font-size: xx-large;
+}
 
 .pagination , li{
     color:red;
 }
-.stile{
-background-color: darkcyan;
-padding:30px 20px;
-  gap: 30px;
-border-radius:40px;
-list-style: none;
-display: flex;
-
-}
-/* STILE ALLA NAVBAR */
-.stile li a {
-    color:white;
-    display: inline;
-   transition: 0.3s;
-}
-
+                /* LINK NAVBAR */
+                .stile{
+                    display:flex;
+                    gap:30px;
+                    background-color: rgb(62, 35, 137);
+                    padding:30px 20px;
+                    border-radius:40px;
+                    list-style: none;
+                  
+                }
+                    
+                    
+                /* STILE ALLA NAVBAR */
+                .stile li a {
+                    color:white;
+                    display: inline;
+                    transition: 0.3s;
+                }
+                
 .stile li a:hover {
     transform: scale(1.8);
     color: #b09bf1e1;
@@ -124,14 +130,11 @@ display: flex;
 
 .film-box {
     background: blue;
-
     padding: 10px;
     border-radius: 10px;
     text-align: center;
-    box-shadow: yellowgreen;
+  
 }
-
-
 
 .film-box img {
     width: 100%;
@@ -139,6 +142,7 @@ display: flex;
     margin-bottom: 10px;
     transition: 0.3s;
 }
+
 /* STILE ALLE CARD PER UN HOVER A INGRANDIRE */
 .film-box img:hover {
     transform: scale(1.05);
@@ -161,7 +165,7 @@ color: yellow;
     transition: 0.3s;
     color:rgb(254, 181, 47);
 }
-
+/* propieta' = FA ingrandire il link della card */
 /* HOVER EFFETTO PER AVERE INTERATTIVITA' DI CSS AL LINK */
 .film-link:hover {
     transform: scale(1.8) translateY(-3px);
@@ -177,19 +181,19 @@ MENTRE ACTIVE :SE, CLICCATO.*/
 
 
 
-
-/* css per modale e form */
 /* Bottone */
 .btn {
     transition: 0.3s;
 }
 
+
+/* CSS SEZIONE DEI FILMS */
 #Films{
     background-color: rgb(201, 173, 228);
 }
 #Films h2{
-   color: red;;
-   
+    color: red;;
+    
 }
 
 #Films:hover h2{
@@ -197,63 +201,69 @@ MENTRE ACTIVE :SE, CLICCATO.*/
     transition: 0.2s;
 }
 
-
-/* CSS MODALE */
-
-.bottone {
-    background-color: yellow;
-    padding: 10px 20px;
-    border-radius: 8px yellow;
+/* css per modale e form */
+.modal-title {
+    
+    text-align: center;
     font-weight: bold;
+    color: #0d6efd;
 }
 
-h5 {
-border-radius: 5px;
-    font-weight: 900;
-    color: blue;
-    background-color: rgb(31, 250, 250);
-    color:darkblue;
-    display: block;
+
+/* CSS FORM + MODALE */
+
+.form-wrapper {
+    color: rgb(159, 175, 170);
+    
+    width: 900px;
+    margin: 10px auto;
+    padding: 80px;
+    background-color: #f3e3f5;
+    border-radius: 5px;
+     /* display: block;
     justify-content: center;
-  align-items: center;
+  align-items: center; */
+  
 }
-.modal-content {
-    background-color: #e8f6ff;
+
+.form-control{
+    border-radius: 15px;
+    border: gray;
+    color: black;
+    background-color: yellow;
+}
+
+
+.bottone{
+    background-color: red;
+    border-radius: 12px;
+   
+}
+
+.modal-header {
+    color: black;
+    background-color: #faffe8;
     border-radius: 32px;
      padding: 20px;
     border: 2px solid #0d6efd; 
-} 
+}  
 
 .modal-body {
     display: flex;
-    color: red;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border-radius: 15px;
-    padding: 20px;
-    background-color: #95abab;
-    color: rgb(56, 6, 56);
+ 
+   
 }
 
-.form-wrapper {
-    color: aquamarine;
-    width: 350px;
-    margin: 240px auto;
-    padding: 60px;
-    background-color: #35093b;
-    border-radius: 15px;
-    box-shadow: 0 0 10px #0d6efd55;
-}
 .form-wrapper input {
     background-color: white;
-    color: black;
     border: 2px solid #0d6efd;
 }
 
 .form-wrapper input:hover {
-     box-shadow: white;
-     
+    
     border-bottom: 2px solid yellow;
     background-color: pink;
 }
@@ -261,20 +271,13 @@ border-radius: 5px;
 
 
 
-
-
-
-
-
-
-
 /* CSS PER IL FOOTER-PIE' DI FONDO PAGINA */
 
 footer{
-     box-shadow: 0 0 10px #0d6efd55;
-    background-color: cyan ;
+     box-shadow: 0 0 10px #fcfdffc9;
+    background-color: rgb(62, 160, 160) ;
     color: darkblue ;
-   height: 120px;
+
     border-color: grey;
     border-top: 3px solid cadetblue;
     
@@ -285,12 +288,14 @@ height: 15px 0;
 }
 
 
+
 /* MEDIA QUERY PER RENDERE RESPONSIVE A UN LAYOUT PER MOBILE O SCHERMI RIDOTTI */
 
 @media (max-width: 576px) {
 
      .form-wrapper {
         width: 90%;
+        padding:30px;
     }
 
 
