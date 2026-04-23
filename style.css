@@ -109,7 +109,7 @@ text-align: center;
 
 .h1{
     
-    font-size: 600px;
+    font-size: 60px;
     display: block;
     color: black;
     font-family: "Electrolize", sans-serif;
@@ -153,7 +153,7 @@ h2{
 /* STILE ALLE CARD PER UN HOVER A INGRANDIRE */
 .film-box img:hover {
   transition: 1.3s ease;
-  transform: scale(2.1);
+  transform: scale(1.1);
 }
 
 
@@ -276,7 +276,7 @@ footer p {
 
 
 
-
+/* STILE PER IL COROUSEL IMMAGINI A SLIDES */
 /* primo div riportato del carousel */
 
 .carousel-item img{
@@ -284,23 +284,32 @@ footer p {
  position: sticky;
     object-fit: cover;
     color:lime;
-    height: 40px;
+    height: 350px;
     width: 60%;
     background-color: aquamarine;
 }
 
 /* div per immagine */
 .carousel-inner {
+   /* Arrotondo angoli contenitore */
     border-radius: 32px;
+    /* Ombra immessa + colore */
     box-shadow: yellow;
     box-sizing: 25px ;
+    /* Spazio interno a sinistra */
     padding-left: 12px;
+    /* Spazio a destra */
     padding-right: 24px;
 }
+
+
+
+/* STILE PER GLI ACCORDION E QUINDI LE DOMANDE(FAQ) */
 .accordion-button {
     color: black;
     font-size: 34px;
     font-weight: bold;
+    /* Angoli arrotondati */
     border-radius: 12px;
 }
 
@@ -309,20 +318,20 @@ footer p {
     background-color: white;
     color: black;
 }
+
+/* MODALE E MESSAGGIO DI COMPARSA */
 .modal-content {
     border-radius: 14px;
 
 }
 
 .success-box {
+    /* BOX RIMANE NASCOSTO (DI DEFOLUT) */
     display: none;
-    margin-top: 20px;
-    padding: 15px;
+  
     background-color: #d4edda;
     border: 2px solid #155724;
-    border-radius: 10px;
-    font-weight: bold;
-    text-align: center;
+   text-align: center;
 }
 
 
