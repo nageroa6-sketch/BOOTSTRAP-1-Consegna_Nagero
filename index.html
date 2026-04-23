@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap1 -SKlls</title>
+    <title>Skills</title>
 
 
             <!-- link per collegare il bootstrap -->
@@ -17,8 +17,8 @@
                 <link rel="preconnect" href="https://fonts.googleapis.com">
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
                 <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Roboto+Serif:ital,opsz@0,8..144;1,8..144&display=swap" rel="stylesheet">
-
-                    <!-- css- link -->
+<!-- ______________________________________________________________ -->
+                    <!-- CSS PERSONALE -->
 
                 <link rel="stylesheet" href="style.css">
         </head>
@@ -26,59 +26,86 @@
             
     
     
-                               <!-- NAVBAR -->
+                               <!-- NAVBAR , ORA DA BOOTSTRAP-->
+       
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            
         
-        <nav class="navbar">
-            <h3 class="logo">Blog</h3>
+        <div class="container-fluid">
+                <a class="navbar-brand" href="#">BLOG
 
-                    <ol class="stile">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Film</a></li>
-                        <li><a href="#">Lavora con noi</a></li>
-                    </ol>
+
+                    <img src="./Media/mandala.png" alt="LogoMandala" class="logo-nav" style="height:15px">
+                </a>
+
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Associati</a></li>
+                                <li><a class="dropdown-item" href="#">Annunci films</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Altra sezione</a></li>
+                            </ul>
+                        </li>
+                
+                    </ul>
+
+
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" />
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
         </nav>
-        
+
+
+
 <!-- HERO-SECTION -->
 
             <header class="hero-section">
-
-                <h1 class="hero-section">BLOG DI Films</h1>
-            
-            </header>
-    <!-- GRYD SYSTEM: CONTAINER
-     in una row= 12 colonne di massimo -->
-    
-
-    <!-- SEZIONE DEDICATA AI FILM -->
-    <!-- Main è una sezione molto importante serve per il contenuto 
-    principale: Pagina-contenuto.
-    Lo usi mettere solo una volta. le section vanno al suo d'inerno..-->
-    <!-- La section invece la usiamo mantenendo il codice + pulito ,
-        ed ordinato,
-        per creare;
-        una sezione particolare nello spazio pagina, come ad esempio qui metterò i miei 
-        blocchi tematici per CARDS FILMS E DESCRIZIONE SCRITTA.  -->
+<h1 class="hero-title ">BLOG DI Films</h1> 
+           
 
 
-
-<div class="container mt-3 py-5 bg-danger">
 <section id="Films">
-    <h2 class="mb-5 text-center">Film in evidenza</h2>
-  <div class="row ">
-<!-- SEZIONE FILMS -->
-<div class="col-4">
+    <h2 class="sottotitolo">Film in evidenza</h2>
+    <div class="container">
+ 
+    <div class="row row-cols-1 row-cols-md-3 g-4">
 
-            <div class="film-box">
-                <img src="./Media/film1.jpg" alt="film-2">
+
+                       <!-- SEZIONE FILMS -->
+<div class="col">
+
+            <div class="card h-100">
+                <img src="./Media/film1.jpg" alt="film-1" class="w-100">
                 <h3>Fantasy  Peter Pan Il Cartone Animato Disney</h3>
                 <p>Un viaggio di fantasia; uno dei best-seller di sempre.</p>
                 <a href=" https://www.rottentomatoes.com" target="_blank" class="film-link">Scopri -></a>
             </div>
         </div>
         <!-- Film 2 -->
-        <div class="col-md-4">
-            <div class="film-box">
-                <img src="./Media/peter.jpg" alt="film-2">
+        <div class="col">
+            <div class="card h-100">
+                <img src="./Media/peter.jpg" alt="film-2" class="w-100">
                 <h3>Peter Pan</h3>
                 <p>Un viaggio tra sogno avventura; Film che appassiona, piccoli e grandi.</p>
                 <a href=" https://www.rottentomatoes.com" target="_blank" class="film-link">Scopri </a>
@@ -86,9 +113,9 @@
         </div>
     
     <!-- Film 3-->
-<div class="col-md-4">
-            <div class="film-box">
-                <img src="./Media/img.3.jpg" alt="film-3">
+<div class="col">
+            <div class="card h-100">
+                <img src="./Media/img.3.jpg" alt="film-3" class="w-100">
                 <h3>Fantasy  Pinocchio e le sue avvenuture!</h3> 
                 <p>terza card film</p>
                 <a href=" https://www.rottentomatoes.com" target="_blank" class="film-link">Scopri </a>
@@ -96,35 +123,88 @@
         </div>
 </div>
 </div>
-<!-- ______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________ -->
-<!-- FORM E MODALE 
-SEZIONE LAVORA CON NOI -->
+</header>
 
-<h5 class="modal-title mt-5">Lavora con noi</h5>
 
-<div class="form-wrapper">
-   <button type="button" class="btn-close" data-bs-dismiss="modal">
 
-   </button>
-         
-<!-- FORM E-MAIL E PSW -->
-         <form>
-             <label>Email</label>
-             <input type="email" class="form-control mb-3">
-             
-             <label>Password</label>
-             <input type="password" class="form-control mb-3">
-             
-             
-             <!--BOTTONE PER INVIO FORM  -->
-             <button type="button" class="bottone"
-             data-bs-toggle="modal"
-             data-bs-target="#modalLavora">
-             Invia
-            </button>
+
+<!-- CAROUSEL immagini dei films in scorrimento-->
+
+<div id="carouselExampleDark" class="carousel carousel-dark slide">
+    <div class="carousel-indicators">
+
+
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" ></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" ></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="./Media/film1.jpg" class="d-block w-45 h-50" alt="Immagine Film">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>Img.Film 1.</p>
+            </div>
         </div>
-    </form>
+        <div class="carousel-item" >
+            <img src="./Media/peter.jpg" class="d-block w-45 h-50" alt="Immagine Film">
+            <div class="carousel-caption d-flex d-md-block">
+                <h5>Second slide label</h5>
+                <p>Img. Film 2.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="./Media/img.3.jpg" class="d-block w-45 h-50" alt="Terza immagine Film">
+            <div class="carousel-caption d-flex -md-block">
+                <h5>Third slide label</h5>
+                <p>Img Film 3.</p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" ></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" ></span>
+        <span class="visually-hidden">Next</span>
+    </button>
 </div>
+
+
+
+
+
+
+<!-- FORM E MODALE LAVORA CON NOI/ SEZIONE INSERIMENTO DEGLI INPUT -->
+
+<section class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+
+    
+    <h3 class="text-center">Lavora con noi</h3>
+
+    <form id="form-lavora">
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" required>
+        </div>
+        <div class="text-center">
+    <button type="submit" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#grazieModal">
+        Invia
+    </button>
+</div>
+</form>
+</div>
+</div>
+</section>
+
 
      
 
@@ -134,46 +214,73 @@ SEZIONE LAVORA CON NOI -->
   <div class="modal-dialog">
     <!-- Riquadro per Modale -->
     <div class="modal-content">
+<div class="modal-header">
+    <h5 class="modal-title fw-bold">Grazie per averci contattato!</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+<div class="modal-body text-center">
+    <p class="mt-3 fs-5">Ti risponderemo presto.</p>
+    </div>
+    <div class="modal-footer justify-content-center">
+        <button type="button" class="btn btn-secondary px-4" data-bs-dismiss="modal">Chiudi</button>
+    </div>
 
-
-
-<!-- HEADER MODALE-->
-        <!-- Contenitore titolo e pulsante chiuedere modale -->
-      <div class="modal-header">
-        <h5 class="modal-title text-primary">Grazie per averci contattato!</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-
-      <!-- CONTENUTO msg ALTRO  -->
-      <div class="modal-body text-center">
-        <p class="text-info">Grazie per averci contattato! </p>
-      </div>
-
-   
-
-  </div>
-  </div>
+</div>
+</div>
 </div>
 
 
 
+<!-- FAQ -->
+<section class="container my-5">
+    <h4>Domande frequenti (FAQ)</h4>
 
+    <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                    Come funziona il blog?
+                </button>
+            </h2>
+            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    Il blog pubblica recensioni, news e approfondimenti sul mondo del cinema, aggiornato periodicamente.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">
+                    Posso contattarvi per collaborare?
+                </button>
+            </h2>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    Sì, puoi usare il form nella sezione "Lavora con noi" o i social presenti nel footer.
+                </div>
+          
+            </div>
+        </div>
+    </div>
+</section>
 
 
     <!-- FOOTER -->
 
 
-            <footer>
+        <footer class="bg-dark text-white py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
 
-            <em>
+            <b>
 
                 <p>Tutti i Diritti Riservati;</p>
-            </em> 
+            </b> 
                 
-
-            
 <h6>P.IVA  542842412420551AAFF ,Varese Ditta. H-Aulab (Hackademy) </h6>
-            <br><p class="m-5 p-4 "> Hack di Mario Rossi; Varese, Viale Ditta, Istituto "H.aulab" _ Contatti Social ed info:
+            <br><p id="footer"> Hack di Mario Rossi; Varese, Viale Ditta, Istituto "H.aulab" _ Contatti Social ed info:
                 
             </p>
 
@@ -181,13 +288,17 @@ SEZIONE LAVORA CON NOI -->
             <!-- icona fb -->
                 <i class="bi bi-facebook"></i>Facebook-Seguici! www.---
                 <br><i class="bi bi-instagram"></i>Instagram : "Hack-Ademy.Aulab"
+            </div>
+            </div>
+            </div>
+            
             </footer>
 
 
 
 <!-- FINE LAVORO -->
 
-    <!-- script bootstrap -->
+    <!--CDN (JS) - script bootstrap -->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
