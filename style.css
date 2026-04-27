@@ -75,22 +75,22 @@ body {
         font-weight: 700;
 color: #000;
 font-size: clamp(2.5rem, 8vw, 5rem);
-    letter-spacing: 4px;
+    letter-spacing: 1px;
     margin-bottom: 20px;
     text-transform: uppercase;
 }
 
 
 .hero-section{
-    min-height:80vh ;
-    letter-spacing: 4px;
+    min-height:100vh ;
+    letter-spacing: 1px;
     flex-direction: column;
    background-color: rgb(237, 237, 222);
    border-radius: 15px;
    border-style: dotted;
    border-color: white;
    border-left-width: 21px;
-  margin: 20px;
+  /* margin: 20px; */
 text-align: center;
     /*ATTIVA FLEXBOX  */
    display: flex;
@@ -161,7 +161,8 @@ h2{
 /* STILE AL LINK DEL SINGOLO FILM  */
 .film-link  {
     background-color: greenyellow;
-    padding: 6px 11px;
+    text-align: center;
+    padding: 6px 7px;
     border-radius: 4px;
     display: inline-block;
     color:rgb(254, 181, 47);
